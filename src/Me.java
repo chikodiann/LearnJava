@@ -16,7 +16,6 @@ public class Me {
             int userFavoriteNumber = favoriteNumber.nextInt();
             System.out.println(userFavoriteNumber + " is my favorite number too!");
     //Read user's name and age and print both in one line
-
         Scanner userInput = new Scanner(System.in);
         System.out.print("Enter your name and age: ");
         String name = userInput.next();
