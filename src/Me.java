@@ -9,6 +9,13 @@ public class Me {
         int presentYear = 2023;
         int userAge = presentYear - enteredAge;
         System.out.println("You are " + userAge);
+
+    //Read the user's favorite number(double or int) and then display it in a message of your choice.
+            Scanner favoriteNumber = new Scanner(System.in);
+            System.out.println("What is your favorite number ? ");
+            int userFavoriteNumber = favoriteNumber.nextInt();
+            System.out.println(userFavoriteNumber + " is my favorite number too!");
+
     }
 
     public static void sayName() {
