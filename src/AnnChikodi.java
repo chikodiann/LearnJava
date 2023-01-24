@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class AnnChikodi {
     public static void main(String[] args) {
         System.out.print("Welcome onboard. ");
@@ -55,6 +57,34 @@ public class AnnChikodi {
         String name2 = "Decagon Institute";
         System.out.println(!name2.isEmpty() ? "The name is not valid" : name);
         // this will print out the name [Decagon Institute] because the string is not empty and [!] negates the .isEmpty command
+
+        // IF STATEMENTS
+        int x = 5;
+        int y = 10;
+
+        if (x > y)
+            System.out.println("the maximum is " + x);
+        if (y > x)
+            System.out.println("the maximum is " + y);
+        if (y == x)
+            System.out.println("the numbers are equal");
+        //the maximum is 10 will be printed, because that's the only condition that is true
+
+        /* TASK ON IF STATEMENTS
+            Write a program that reads an integer from the user and determines if the integer is even or odd.
+         */
+        System.out.print("Enter an integer: ");
+
+        Scanner intInput = new Scanner(System.in);
+        int enteredInt = intInput.nextInt();
+
+        if (enteredInt % 2 == 0)
+            System.out.println(enteredInt + " is even");
+        if (enteredInt % 2 > 0)
+            System.out.println(enteredInt + " is odd");
+        //the above statement can also be written as this:
+        if (!(enteredInt % 2 == 0))
+            System.out.println(enteredInt + " is odd");
 
     }
 }
