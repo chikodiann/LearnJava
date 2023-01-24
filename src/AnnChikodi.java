@@ -37,5 +37,24 @@ public class AnnChikodi {
         System.out.println(ni1 / (double) ni2); // it will print 1.5
         System.out.println((double) ni1 / (double) ni2); // it will print 1.5
         System.out.println((double) (ni1 / ni2)); // it will print 1.0
+
+   //CONDITIONAL OPERATORS
+        //This evaluates an expression based on a condition
+
+        //eg 1:
+        String name = "Decagon Institute";
+        System.out.println(name.isEmpty() ? "The name is not valid" : name);
+        // this will print out the name [Decagon Institute] because the string is not empty
+
+        //eg 2:
+        String name1 = "";
+        System.out.println(name1.isEmpty() ? "The name is not valid" : name1);
+        // this will print out the name [The name is not valid] because the string is empty
+
+        //eg 3 :
+        String name2 = "Decagon Institute";
+        System.out.println(!name2.isEmpty() ? "The name is not valid" : name);
+        // this will print out the name [Decagon Institute] because the string is not empty and [!] negates the .isEmpty command
+
     }
 }
