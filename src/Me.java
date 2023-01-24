@@ -15,12 +15,14 @@ public class Me {
             System.out.println("What is your favorite number ? ");
             int userFavoriteNumber = favoriteNumber.nextInt();
             System.out.println(userFavoriteNumber + " is my favorite number too!");
-    //Read user's name and age and print both in one line
+
+            //Read user's name and age and print both in one line
         Scanner userInput = new Scanner(System.in);
         System.out.print("Enter your name and age: ");
         String name = userInput.next();
         int age = userInput.nextInt();
         System.out.println(name + "!" + " You are " + age + " years old!");
+
 
     }
 
