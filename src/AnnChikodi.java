@@ -86,5 +86,16 @@ public class AnnChikodi {
         if (!(enteredInt % 2 == 0))
             System.out.println(enteredInt + " is odd");
 
+        //IF ELSE STATEMENT
+        System.out.print("Enter a number: ");
+
+        Scanner newInput = new Scanner(System.in);
+        int enterNewInt = intInput.nextInt();
+
+        if (enterNewInt % 2 == 0)
+            System.out.println(enterNewInt + " is even");
+        else
+            System.out.println(enterNewInt + " is odd");
+
     }
 }
