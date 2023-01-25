@@ -97,5 +97,14 @@ public class AnnChikodi {
         else
             System.out.println(enterNewInt + " is odd");
 
+        //task 2
+        int n = 8;
+        if (n > 10)
+            System.out.println("> 10");
+        else if (n == 10)
+            System.out.println(" = 10");
+        else
+            System.out.println("< 10");
+
     }
 }
