@@ -20,7 +20,8 @@ public class Exercises {
             System.out.println((int) (num1 * num2));
         else if (operator == '/' )
         System.out.println((int) (num1 / num2));
-
+        else
+            System.out.println("Invalid Operator");
 
 
     }
