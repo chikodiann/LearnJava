@@ -78,5 +78,7 @@ public class Exercises {
             newNum = d.nextInt();
         } while (newNum < 1 || newNum > 10);
             System.out.println(newNum + " is between 1 and 10. Thanks!!!");
+
+            // FOR LOOP
     }
 }

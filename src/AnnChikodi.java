@@ -140,5 +140,32 @@ public class AnnChikodi {
         } while (c <= 5);
 //though the condition is false, it will execute once,
 // because do while executes at least once before checking the conditions
+
+
+        //FOR LOOP
+
+       //Variables are declared and set inside the loop and cannot be used outside it
+        for (int g = 1; g <= 5; g++) {
+            System.out.println("HI PEOPLE " + g);
+        }
+       /* Variables can be declared outside the loop, but initialized inside the loop,
+       this one can be accessed outside the loop, though when called the value will
+       reflect the conditions executed in the loop. */
+        int h;
+        for( h = 1; h <=3; h++) {
+            System.out.println("Welcome onboard " + h); //this will print 'Welcome onboard 1-3'
+        }
+        System.out.println("How was your trip " + h); //this will print 'How was your trip 4'
+                                                        // because h has added 1(h++) thrice,
+                                                        // so current value of h is 3,
+                                                        // now calling it again make sit 4
+        //Variable can be initialised outside... and this variable can be accessed outside the loop
+        int e = 1;
+        for(; e <= 4; ++e){ //there's no difference between pre-increment and post-increment in for loop
+            System.out.println("Great " + e); // this will print 'Great 1 - 4'
+        }
+        System.out.println("One " + e); // this will print 'One 5'
+
+
     }
 }
