@@ -132,7 +132,13 @@ public class AnnChikodi {
             System.out.println("ANN");
             a++;
         } //This just prints ANN 8 times
-
-
+// DO WHILE LOOP
+        int c = 100;
+        do {
+            System.out.println("hello " + c);
+            c++;
+        } while (c <= 5);
+//though the condition is false, it will execute once,
+// because do while executes at least once before checking the conditions
     }
 }
