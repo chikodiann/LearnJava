@@ -68,5 +68,15 @@ public class Exercises {
             }
         System.out.println(num + " is between 1 and 10. Thanks!!!");
 
+            //DO SAME EXERCISE ABOVE, THIS TIME USING A DO WHILE LOOP!!!
+
+        Scanner d = new Scanner(System.in);
+
+        int newNum;
+        do {
+            System.out.println("Enter a number between 1 and 10");
+            newNum = d.nextInt();
+        } while (newNum < 1 || newNum > 10);
+            System.out.println(newNum + " is between 1 and 10. Thanks!!!");
     }
 }
