@@ -119,5 +119,20 @@ public class AnnChikodi {
                 System.out.println("non of the above");
         }
 
+        // THE WHILE LOOP IN JAVA
+        //Let's say we want to print "HELLO 1-5" times.
+
+        int i = 1;
+        while (i <= 5) {
+            System.out.println("HELLO " + i);
+            i++;
+        }
+        int a = 1;
+        while (a <= 8) {
+            System.out.println("ANN");
+            a++;
+        } //This just prints ANN 8 times
+
+
     }
 }
