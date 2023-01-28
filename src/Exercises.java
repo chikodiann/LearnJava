@@ -80,5 +80,12 @@ public class Exercises {
             System.out.println(newNum + " is between 1 and 10. Thanks!!!");
 
             // FOR LOOP
+        // Build a 10 by 10 multiplication table
+        for(int t = 1; t <= 10; t++) {
+            for(int u = 1; u <= 10; u++)
+                System.out.print((t * u) + " ");
+
+            System.out.println();
+        }
     }
 }

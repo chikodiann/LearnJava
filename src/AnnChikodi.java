@@ -166,6 +166,14 @@ public class AnnChikodi {
         }
         System.out.println("One " + e); // this will print 'One 5'
 
+    //NESTED LOOPS
+// consists of an outer loop and one or more inner loops
+        for(int m = 1; m <= 5; m++) {
+            for (int p = 1; p <= m; p++)
+                System.out.print("*");
+
+            System.out.println();
+        } //this will print 5 rows of stars[*] in increasing order
 
     }
 }
