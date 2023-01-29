@@ -53,7 +53,7 @@ public class Exercises {
                 System.out.println("Not a lucky number");
         }
             //WHILE LOOP EXERCISE
-            /* Write a program that reads an integer between 1 and 10 from the user
+            /* 3. Write a program that reads an integer between 1 and 10 from the user
                 *enter a number between 1 and 10.
                 * Try again: 15 is not between 1 and 10
                 * 7 is between 1 and 10. Thanks!!!
@@ -80,17 +80,69 @@ public class Exercises {
             System.out.println(newNum + " is between 1 and 10. Thanks!!!");
 
             // FOR LOOP
-        // Build a 10 by 10 multiplication table
+        // 4. Build a 10 by 10 multiplication table
         for(int t = 1; t <= 10; t++) {
             for(int u = 1; u <= 10; u++)
                 System.out.print((t * u) + " ");
 
             System.out.println();
         }
-        //WRITE A PROGRAM WHICH PRINTS THE EVEN NUMBERS BETWEEN 1 ANS 100 IN AN INCREASING ORDER
-        for (int numList = 1; numList <= 100; numList++){
-            if(numList % 2 == 0)
+
+        // 5. WRITE A PROGRAM WHICH PRINTS THE EVEN NUMBERS BETWEEN 1 ANd 100 IN AN INCREASING ORDER
+        for (int numList = 0; numList <= 100; numList++) {  // or numList += 2
+            if (numList % 2 == 0)
                 System.out.println(numList + " ");
         }
+        //for odd number, just say if(numList % 2 != 0);
+        //for printing in descending order say for(int numList = 100; numList >= 1; numList--)
+        // to do this same thing using while loop
+        int newNumList =1;
+        while(newNumList <= 100) {
+            if(newNumList % 2 == 0)
+                System.out.println(newNumList + " ");
+
+            newNumList++;
+        }
+
+        /* 6. WRITE A PROGRAM WHICH READS A SEQUENCE OF INTEGERS FROM THE USER AND
+            STOPS BY DISPLAYING "DONE" WHEN THE SUM OF THESE VALUES EXCEEDS 100 */
+        Scanner w = new Scanner(System.in);
+        int intSum = 0;
+        while (true) {
+            System.out.print("Enter a number: ");
+            intSum += w.nextInt();
+
+            if(intSum > 100)
+                break;
+        }
+
+        System.out.println("Done: " + intSum);
+
+        // OR
+
+        Scanner v = new Scanner(System.in);
+        int whileSum = 0;
+        while (whileSum <= 100) {
+            System.out.print("pick a number: ");
+            whileSum += v.nextInt();
+        }
+
+        System.out.println("Done: " + whileSum);
+
+        // OR
+
+        Scanner z = new Scanner(System.in);
+        int doSum = 0;
+        do {
+            System.out.print("write a number: ");
+            doSum += z.nextInt();
+        } while (doSum <= 100);
+
+        System.out.println("Done: " + intSum);
+
+        /* 7.
+
+         */
+
     }
 }
