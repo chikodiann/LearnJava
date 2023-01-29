@@ -174,6 +174,11 @@ public class AnnChikodi {
 
             System.out.println();
         } //this will print 5 rows of stars[*] in increasing order
-
+    //BREAK & CONTINUE
+        for (int b = 1; b <= 10; b++) {
+            if(b % 2 == 0)
+                continue;
+            System.out.println(b + " ");
+        } //this will print all the odd numbers between 1 and 10
     }
 }

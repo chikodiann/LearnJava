@@ -91,8 +91,7 @@ public class Main {
                                 // this will print [Welcome onboard, (input-entered) please have fun]
         /* .next() only reads one word, to read multiple words and sentences use .nextLine(),
             .nextInt, .nextBoolean, .nextFloat and so on can be used, depending on the data type you are expecting
-
-
          */
+
     }
 }
