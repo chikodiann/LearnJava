@@ -141,8 +141,21 @@ public class Exercises {
         System.out.println("Done: " + intSum);
 
         /* 7.
-
+        WRITE A PROGRAM WHICH DISPLAYS THE SUM OF THE STRICT DIVISORS
+        OF AN INTEGER GIVEN BY THE SER
          */
+        Scanner a = new Scanner(System.in);
+
+        System.out.print("Enter an integer: ");
+        int b = a.nextInt();
+
+        int divisionSum = 0;
+        for (int c = 1; c <= b/2; c++)
+            if (b % c == 0)
+                System.out.println(c + " ");
+
+
+        System.out.println(divisionSum);
 
     }
 }
