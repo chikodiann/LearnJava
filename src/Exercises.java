@@ -87,5 +87,10 @@ public class Exercises {
 
             System.out.println();
         }
+        //WRITE A PROGRAM WHICH PRINTS THE EVEN NUMBERS BETWEEN 1 ANS 100 IN AN INCREASING ORDER
+        for (int numList = 1; numList <= 100; numList++){
+            if(numList % 2 == 0)
+                System.out.println(numList + " ");
+        }
     }
 }
