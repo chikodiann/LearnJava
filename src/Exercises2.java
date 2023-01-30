@@ -67,5 +67,15 @@ public class Exercises2 {
         else
            System.out.println("number is invalid");
 
+        //WRITE A PROGRAM WHICH DISPLAYS THE SUM OF DIGITS OF AN INTEGER READ  FROM THE USER
+        Scanner userInput = new Scanner(System.in);
+        int n = userInput.nextInt();
+        int sum = 0;
+
+        while(n > 0){
+            sum += n % 10;
+            n /= 10;
+        }
+        System.out.println("sum = " + sum);
     }
 }
