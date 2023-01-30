@@ -37,5 +37,35 @@ public class Exercises2 {
 
         System.out.println(primeSum == 1 ? "Prime" : "Not prime");
 
+        /* WRITE A PROGRAM WHICH READS A SEQUENCE OF POSITIVE INTEGERS.
+            THE PROGRAM STOPS WHEN THE USER FILLS A NEGATIVE VALUE
+            AND SHOWS THE MAXIMUM AND MINIMUM OF THESE NUMBERS
+         */
+
+        Scanner d = new Scanner(System.in);
+        System.out.println("Please pick random numbers: ");
+
+        int userEntry = d.nextInt();
+        int maxNum = userEntry;
+        int minNum = userEntry;
+
+       if (userEntry >= 0) {
+           while (true) {
+               userEntry =d.nextInt();
+
+               if(userEntry < 0)
+                   break;
+
+               if (userEntry > maxNum)
+                   maxNum = userEntry;
+
+               if (userEntry < minNum)
+                   maxNum = userEntry;
+           }
+           System.out.println("minimum value entered = " + minNum + ", maximum value entered = " + maxNum);
+       }
+        else
+           System.out.println("number is invalid");
+
     }
 }
