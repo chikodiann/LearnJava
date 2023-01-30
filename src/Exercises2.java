@@ -38,7 +38,7 @@ public class Exercises2 {
 
         System.out.println(primeSum == 1 ? "It's a Prime number!" : "Not a prime number");
 
-        /* WRITE A PROGRAM WHICH READS A SEQUENCE OF POSITIVE INTEGERS.
+        /* 3. WRITE A PROGRAM WHICH READS A SEQUENCE OF POSITIVE INTEGERS.
             THE PROGRAM STOPS WHEN THE USER FILLS A NEGATIVE VALUE
             AND SHOWS THE MAXIMUM AND MINIMUM OF THESE NUMBERS
          */
@@ -80,7 +80,7 @@ public class Exercises2 {
         }
         System.out.println("sum = " + sum);
 
-        /* The Fibonacci sequence is a sequence where the first two numbers in
+        /* 4. The Fibonacci sequence is a sequence where the first two numbers in
         the sequence are 1 and 1.
         eg: 1, 1, 2, 3, 5, 8, 13,21, ...
         WRITE A PROGRAM THAT READS AN INTEGER n AND DISPLAYS THE nth FIBONACCI NUMBER
@@ -99,5 +99,46 @@ public class Exercises2 {
                v2 = result;
            }
         System.out.println("result is = " + (result == 0 ? 1 : result));
+
+        /* 5.  Write a program that displays a string with space after each character.
+                eg: some text = s o m e  t e x t
+         */
+        String str = "welcome home";
+        for (int v = 0; v <= str.length() - 1; v++)
+            System.out.print(str.charAt(v) + " ");
+
+        System.out.println();
+        /* 6. Write a program that displays the reverse of a string
+                eg: abcde -> edcba
+         */
+
+        String reverseStr = "chikodinaka anyanwu";
+
+        for (int w = reverseStr.length() - 1; w >= 0; w--)
+             System.out.print(reverseStr.charAt(w));
+
+        System.out.println();
+
+        /* 7. WRITE A PROGRAM WHICH FINDS IF A STRING IS A PALINDROME OR NOT
+                A palindrome is a string of letters that is read the same
+                starting from the beginning or end.
+                EG: noon, aba, a, 12321, poop
+         */
+
+          Scanner t = new Scanner(System.in);
+
+        System.out.println("Pick a word and let's figure out, if it is a palindrome or not: ");
+
+        String pickedWord = t.next();
+
+        boolean isPalindrome =  true;
+        for (int k = 0, l = pickedWord.length() - 1; k < l; k++, l--) {
+            if (pickedWord.charAt(k) == pickedWord.charAt(l))
+                continue;
+
+            isPalindrome = false;
+            break;
+        }
+        System.out.println(isPalindrome ? " it is a palindrome" : " it is not a palindrome");
     }
 }
