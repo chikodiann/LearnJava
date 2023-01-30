@@ -25,17 +25,17 @@ public class Exercises2 {
             N/B: Prime numbers are numbers that are only divisible with themselves and 1
          */
 
-//        Scanner f = new Scanner(System.in);
-//
-//        System.out.print("Pick a random number: ");
-//        int numberPicked = f.nextInt();
-//
-//        int primeSum = 0;
-//        for (int g = 1; g <= b/2; g++)
-//            if (numberPicked % g == 0)
-//                primeSum += g;
-//
-//        System.out.println(primeSum == 1 ? "Prime" : "Not prime");
+        Scanner c = new Scanner(System.in);
+
+        System.out.print("Pick a random number: ");
+        int numberPicked = c.nextInt();
+
+        int primeSum = 1;
+        for (int g = 2; g <= numberPicked/2; g++)
+            if (numberPicked % g == 0)
+                primeSum += g;
+
+        System.out.println(primeSum == 1 ? "Prime" : "Not prime");
 
     }
 }
