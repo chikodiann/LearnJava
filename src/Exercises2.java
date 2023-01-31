@@ -242,5 +242,33 @@ public class Exercises2 {
 
             System.out.println();
         }
+
+    /* 10. Write a program that reads a positive integer N and displays a block of stars like this:
+    eg: n = 5:
+    *****
+    *****
+    *****
+    *****
+    *****
+     */
+        System.out.println("let us print a block of stars, pick the number of lines: ");
+        Scanner g = new Scanner(System.in);
+        int go = g.nextInt();
+
+        for(int k = 1; k <= go; k++) {
+            if (k == 1 || k == go)
+                for(int l = 1; l <= k; l++)
+                System.out.print("*");
+            else
+                for(int l = 1; l <= k; l++)
+                    if (k == 1 || k == go)
+                        System.out.print("*");
+                else
+                        System.out.print(" ");
+
+
+                        System.out.println();
+        }
+
     }
 }
