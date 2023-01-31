@@ -213,6 +213,34 @@ public class Exercises2 {
 
             System.out.println();
         }
+    /*
+    try printing the stars with space in-between
+    eg n = 5
+        *
+       * *
+      *   *
+     *     *
+    *********
+     */
+        System.out.println("Enter a number and I'll issue you stars like a christmas tree, this time with space inbetween: ");
 
+        Scanner vin = new Scanner(System.in);
+        int deNum = vin.nextInt();
+
+        for (int uni = 0; uni <= deNum; uni++ ) {
+
+            for (int fin = 0; fin <= deNum - uni; fin++)
+                System.out.print(" ");
+
+            for (int eni = 0; eni <= 2 * uni; eni++)
+                if (uni == deNum)
+                    System.out.print('*');
+                else if (eni == 1 || eni == 2 * uni - 1)
+                    System.out.print('*');
+                else
+                    System.out.print(" ");
+
+            System.out.println();
+        }
     }
 }
