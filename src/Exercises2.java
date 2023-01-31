@@ -140,5 +140,52 @@ public class Exercises2 {
             break;
         }
         System.out.println(isPalindrome ? " it is a palindrome" : " it is not a palindrome");
+
+        /* 8. Using  nested loops, WRITE A PROGRAM THAT READS A POSITIVE INTEGER N FROM
+            THE USER AND DISPLAYS THE NUMBER OF TIMES IN THIS FORMAT:
+            1
+            22
+            333
+            4444
+            55555
+            ...
+         */
+
+        System.out.println("pick a random number, and I'll display it that number of times: ");
+        Scanner r = new Scanner(System.in);
+        int numberOfRows = r.nextInt();
+
+        for (int o = 1; o <= numberOfRows; o++) {
+            for (int p =1; p <= o; p++)
+                System.out.print(o);
+
+            System.out.println();
+        }
+    /* 9. WRITE A PROGRAM THAT READS A POSITIVE INTEGER AND DISPLAYS THE FOLLOWING:
+        eg: for N = 6:
+             *
+            **
+           ***
+          ****
+         *****
+        ******
+        for N = 3:
+          *
+         **
+        ***
+     */
+        System.out.println("Enter a number and I'll issue you stars to the number equivalent: ");
+
+        Scanner v = new Scanner(System.in);
+        int theNum = v.nextInt();
+
+        for (int u = 0; u <= theNum; u++ ) {
+            for (int e = 0; e <= u; e++)
+                System.out.print('*');
+
+            System.out.println();
+        }
+
+
     }
 }
