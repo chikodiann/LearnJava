@@ -180,12 +180,39 @@ public class Exercises2 {
         int theNum = v.nextInt();
 
         for (int u = 0; u <= theNum; u++ ) {
+
+            for (int f = 0; f <= theNum - u; f++)
+                System.out.print(" ");
+
             for (int e = 0; e <= u; e++)
                 System.out.print('*');
 
             System.out.println();
         }
+        /* try printing the stars like a Christmas tree
+       eg: n = 6
+            *
+           ***
+          *****
+         *******
+        *********
+       ***********
+         */
+        System.out.println("Enter a number and I'll issue you stars like a christmas tree, that number of lines: ");
 
+        Scanner vi = new Scanner(System.in);
+        int dNum = vi.nextInt();
+
+        for (int un = 0; un <= dNum; un++ ) {
+
+            for (int fn = 0; fn <= dNum - un; fn++)
+                System.out.print(" ");
+
+            for (int en = 0; en <= 2 * un; en++)
+                System.out.print('*');
+
+            System.out.println();
+        }
 
     }
 }
