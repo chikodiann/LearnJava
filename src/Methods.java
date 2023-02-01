@@ -2,14 +2,18 @@ import java.util.Scanner;
 
 public class Methods {
     public static void main(String[] args) {
-        // passing argument by value in Java.
-        int x = 1;
-        increment(x);
-        System.out.println(x);
-    }
+        /* WRITE A METHOD THAT GETS THE NAME
+        OF THE USER AND A METHOD THAT GETS THE AGE OF THE USER */
 
-    public static void increment(int x) {
-        x++;
-        System.out.println(x);
+        System.out.print("Enter your name and age: ");
+        System.out.println(getName() + " " + getAge());
+//        System.out.print("Enter your age: ");
+//        System.out.println(getAge());
     }
+        public static  String getName() {
+            return new Scanner(System.in).nextLine();
+        }
+        public static int getAge() {
+        return new Scanner(System.in).nextInt();
+        }
 }
