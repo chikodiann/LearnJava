@@ -19,6 +19,11 @@ public class Arrays {
         System.out.println(str1 == str2);
         System.out.println(str1.equals(str2));
 
+        Point point1 = new Point(1, 2);
+        Point point2 = new Point(1, 2);
+
+        System.out.println(point1 == point2);
+        System.out.println(point1.equals(point2));
 
     }
     public static Point getPoint(){
