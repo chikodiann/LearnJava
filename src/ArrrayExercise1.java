@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class ArrayExercises {
+public class ArrrayExercise1 {
     public static void main(String[] args) {
         /* 1. WRITE A PROGRAM THAT FILLS AN ARRAY WITH n INTEGERS ENTERED BY THE USER.
                 SUPPOSE THAT THE USER CAN ENTER AT LEAST 1 NUMBER AND AT MOST 20 NUMBERS
