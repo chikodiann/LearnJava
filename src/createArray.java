@@ -2,6 +2,7 @@ import java.awt.*;
 import java.lang.reflect.Array;
 import java.util.Arrays;
 
+
 public class createArray {
     public static void main(String[] args) {
         int[] numbers = {3,4,6,3,4}; // how declare and initialize an array
@@ -54,9 +55,14 @@ public class createArray {
         int[] num = {1, 2, 3, 4, 5};
         System.out.println(Arrays.toString(num));
 
+        //variable-length argument lists
+//        System.out.println( sum(1, 7) );
+
+
 
     }
     public static Point getPoint(){
         return new Point(1, 2);
     }
+
 }
