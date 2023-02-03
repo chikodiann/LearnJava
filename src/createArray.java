@@ -34,11 +34,26 @@ public class createArray {
             System.out.print(numbers1[i] + " ");
 
         System.out.println();
-
+        // sort arrays
         int[] num2 = {0, 2, 7, 8, -3, -1, 7, 9, 6};
         Arrays.sort(num2);
         for (int i = 0; i < num2.length; i++)
             System.out.print(num2[i] + " ");
+
+        System.out.println();
+
+        //filling arrays with strings
+         String[] strings = new String[3];
+         Arrays.fill(strings,"hello");
+        System.out.println(Arrays.toString(strings)); //how to print array strings
+
+         Point[] points = new Point[3];
+         Arrays.fill(points,0, 2, new Point(1, 2));
+        System.out.println(Arrays.toString(points));
+
+        int[] num = {1, 2, 3, 4, 5};
+        System.out.println(Arrays.toString(num));
+
 
     }
     public static Point getPoint(){
