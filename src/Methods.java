@@ -7,7 +7,7 @@ public class Methods {
 
         System.out.print("Enter your name and age: ");
         System.out.println(getName() + " " + getAge());
-        printPrimeBetween(10, 30); // i'm calling the prime number method here
+        printPrimeBetween(10, 30); // I'm calling the prime number method here
 
     }
         public static  String getName() {
