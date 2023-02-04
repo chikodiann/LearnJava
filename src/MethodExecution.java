@@ -10,37 +10,39 @@ public class MethodExecution {
     all others : 4
     */
     public static void main(String[] args) {
+
         int highScorePosition = calculateHighScorePosition(1500);
         displayHighScorePosition("Tim", highScorePosition);
 
         highScorePosition = calculateHighScorePosition(1000);
-        displayHighScorePosition("Ann", highScorePosition);
+        displayHighScorePosition("Bob", highScorePosition);
 
         highScorePosition = calculateHighScorePosition(500);
-        displayHighScorePosition("Steve", highScorePosition);
+        displayHighScorePosition("Percy", highScorePosition);
 
         highScorePosition = calculateHighScorePosition(100);
-        displayHighScorePosition("John", highScorePosition);
+        displayHighScorePosition("Gilbert", highScorePosition);
 
         highScorePosition = calculateHighScorePosition(25);
-        displayHighScorePosition("May", highScorePosition);
-
+        displayHighScorePosition("James", highScorePosition);
     }
 
     public static void displayHighScorePosition(String playerName, int highScorePosition) {
-        System.out.println(playerName + " managed to get into position " + highScorePosition + " on the high score list");
+        System.out.println(playerName + " managed to get into position "
+                + highScorePosition + " on the high score list");
     }
 
     public static int calculateHighScorePosition(int playerScore) {
+
         int position = 4;
         if (playerScore >= 1000) {
             position = 1;
         } else if (playerScore >= 500) {
-            position =  2;
+            position = 2;
         } else if (playerScore >= 100) {
             position = 3;
         }
+
         return position;
     }
-
 }
